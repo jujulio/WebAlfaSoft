@@ -1,0 +1,148 @@
+@charset="UTF-8";
+
+body{
+	height: 100%;
+	width: 1260px;
+	background-color: rgb(255,255,255);
+}
+/*MODIFICAR TAMANHO DA IMAGEM LOGO CABEÇALHO*/
+img#logo{
+	position: absolute;
+	bottom: -50px;
+	margin: 5px
+	width: 100px; /*LARGURA DA IMAGEM*/
+	height: 200px; /*ALTURA DA IMAGEM*/
+}
+
+/*CABECALHO*/
+header#cabecalho{
+	z-index: 1;
+	border: 1px #000000 solid;
+	background-color: rgba( 0, 0, 0, 0.7); 
+	width: 1260px;
+	height: 80px;
+	position: fixed;
+	left: 0px;
+	top: 0px; 
+	opacity: 0.9;
+	
+}
+header#cabecalho:hover{
+	opacity: 1;
+	background-color: rgb(0, 0, 0);
+}
+
+/*FORMATAR Links*/
+nav.menu a.navegador{
+	color: #000000;
+	text-decoration: none;
+}
+nav.menu a.navegador:hover{
+	color: #000000;
+}
+nav.menu a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+nav.menu a:hover{
+   text-decoration: underline;
+   color: rgba(4, 187, 248);
+
+}
+   /*MENU COM SUB-MENU*/
+
+ nav.menu {
+ 	position: absolute;
+ 	left: 400px;
+ 	top: 0px;
+ }
+nav.menu ul li{
+	float: left;
+	width: 200px;
+	height: 55px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+	position: relative;
+
+
+}
+nav.menu ul li:hover{
+	background-color: #606060;
+	transition: background-color 1s;
+	
+}
+nav.menu ul{
+  padding: 0px;
+}
+nav.menu ul ul {
+	display: none;
+}
+nav.menu ul li:hover >ul{
+
+	background-color: rgb(255, 255, 255); 
+	display: block;
+}
+nav.menu ul ul{
+	margin-left: 0px;
+	top: 55px;
+	position: absolute;
+
+}
+nav.menu ul ul li:hover{
+	background-color: rgba(80,174,240, 0.5)
+}
+nav.menu h1{
+	display: none;
+}
+nav.menu ul li.texto{
+	font-size: 13pt;
+}
+
+
+
+/*--------------RODAPÉ----------*/
+div#rodaFim footer#rodape{
+	display: block;
+	border: 1px #606060 solid;
+	width: 1260px;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: -2300px;
+    left: 0px;
+
+
+
+}
+footer#rodape img.logoFim{
+	display: block ;
+	position: absolute;
+	top: -90px;
+	left: 340px;
+	
+
+	
+	
+}
+footer#rodape img.logoIcone{
+	display: inline-block;
+	border: 1px #ffffff solid;
+	padding: 5px;
+	margin-left: 10px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 90px;
+	left: 550px;
+
+}
+footer#rodape img.logoIcone:hover{
+	background-color: blue;
+	transition: 1s;
+}
+
+
+
+

@@ -1,0 +1,542 @@
+@charset="UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+
+/*SLIDE MUDA IMAGEM*/
+slider{
+	display: block;
+	width: 1263px;
+	height: 600px;
+	background-color: #1f1f1f;
+	overflow: hidden;
+	position: relative;
+	top: -7px;
+	left: -8px;	
+}
+slider > *{
+	display: block;
+	width: 100%;
+	height: 600px;
+	background-color: #1f1f1f;
+	overflow: hidden;
+	position: absolute;
+	animation: slide 12s infinite;
+}
+slide:nth-child(4) {
+	left: 0%;
+	z-index: 0;
+	position: absolute;
+	animation-delay: -1s;
+	background-image: url("../_imagens/banner1.jpg");
+    background-size: cover; 	
+
+}
+slide:nth-child(3) {
+
+	z-index: 0;
+	position: absolute;
+	animation-delay: 2s;
+	background-image: url("../_imagens/banner2.jpg");
+    background-size: cover;
+
+}
+slide:nth-child(2) {
+	left: 0%;
+	z-index: 0;
+	position: absolute;
+	animation-delay: 5s;
+	background-image: url("../_imagens/banner4.jpg");
+    background-size: cover;
+}
+
+slide:nth-child(1) {
+	left: 0%;
+	z-index: 0;
+	position: absolute;
+	animation-delay: 8s;
+	background-color: #1f1f1f;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes slide {
+
+	0%{ left: 100%; width: 100%;  }
+	5%{ left: 0%; }
+	25%{ left: 0%  }
+	30%{ left: -100%; width: 100%; }
+	30.0001%{ left: -100%; width: 0%; }
+	100%{ left: 100%; width: 0%; }
+}
+/*===================FIM=================*/
+slide img.simp0{
+	width: 400px;
+	height: 250px;
+	margin-top: 120px;
+	margin-left: 470px;
+	
+
+}
+/*BOTAO SLIDE============*/
+a.btnStart{
+	animation: infinite;
+    border: 1px white solid;
+    border-radius: 50px;
+    width: 190px;
+    height: 25px;
+    position: absolute;
+    top: 420px;
+    left: 570px;
+    opacity: 0.9;
+}
+a.btnStart{
+	text-decoration: none;
+	text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family:  'PermanentMarker', cursive;
+    color: rgb(255, 255, 255); 
+    padding: 5px;
+}
+a.btnStart:hover{
+	opacity: 1;
+	background-color: rgb(46,6,249);
+	transition-duration: 0.5s;
+}
+
+
+/*==============fim===============*/
+
+/* ======================PRIMEIRO CORPO====================== */
+section#artigo1 a.btnCorpo{
+	display: block;
+	border: 1px #606060 solid;
+	border-radius: 50px;
+	width: 250px;
+	height: 25px;
+	position: absolute;
+	top: 970px;
+	left: 535px;
+}
+section#artigo1 a.btnCorpo:hover{
+	background-color: rgb(46, 6, 249);
+	transition-duration: 0.5s; 
+	color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
+}
+ section#artigo1 a.btnCorpo{
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'PermanentMarker', cursive;
+	color: #606060;
+	padding: 5px;
+
+}
+section#artigo1 img.simp1 {
+	width: 250px;
+	height: 120px;
+	position: absolute;
+	top: 680px;
+	left: 550px;
+}
+section#artigo1 p.corpo{
+	padding: 15px;
+	font-family: arial;
+	font-size: 22pt;
+	color: #606060;
+	margin-right: 80px;
+	text-align: center;
+	position: absolute;
+	top: 780px;
+	left: 80px;
+
+}
+/*===================SEGUNDO CORPO ===================*/
+section#artigo2 p.corpo2{
+	padding: 100px;
+	text-align: center;
+	font-family: arial;
+	font-size: 30pt;
+	color: #606060;
+	position: absolute;
+	top: 1000px;
+	left: 200px;
+
+}
+/*============CONSULTORIA==========*/
+section#artigo2 span.art0{
+	padding: 10px;
+	display: block;
+	width: 300px;
+	height: 500px;
+	border: 1px #000000 solid;
+	background-color: rgb(18,131,197);
+	position: absolute; 
+	top: 1350px;
+	left: 100px;
+	transition: box-shadow 0.8s;
+
+}
+section#artigo2 span.art0:hover{ 
+	box-shadow: 10px 10px 10px #606060;
+	background-color: rgba(18,131,197, 0.8);
+
+}
+section#artigo2 h1.hIN0{
+	text-align: center;
+	font-family: arial;
+	font-size: 20pt;
+	border-bottom: 1px #000000 solid;
+	margin-top: 43px;
+
+}
+section#artigo2 p.consul{
+	text-align: center;
+	font-family: 'PermanentMarker', cursive;
+	font-size: 15pt;
+	padding: 2px;
+	color: rgb(255, 255, 255);
+	margin-top: 30px;
+}
+section#artigo2 img.icone0{
+	margin-left: 80px;
+}
+section#artigo2 a.btnArt0{
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+
+	border: 2px rgb(255, 255, 255) solid;
+	border-radius: 50px;
+	opacity: 0.9;
+
+    position: absolute;
+    top: 460px;
+    left: 110px;    
+}
+section#artigo2 a.btnArt0:hover{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #000000;
+}
+/*============PROGRAMAÇÃO==========*/
+section#artigo2 span.art1{
+	padding: 10px;
+	display: block;
+	width: 300px;
+	height: 500px;
+	border: 1px #000000 solid;
+	background-color: rgb(215, 111, 57);
+	position: absolute; 
+	top: 1350px;
+	left: 500px;
+	transition: box-shadow 0.8s;
+
+}
+section#artigo2 span.art1:hover{ 
+	background-color: rgba(215, 111, 57, 0.8);
+	box-shadow: 10px 10px 10px #606060;
+}
+section#artigo2 h1.hIN1{
+	text-align: center;
+	font-family: arial;
+	font-size: 20pt;
+	border-bottom: 1px #000000 solid;
+	position: absolute;
+	top: 150px;
+
+}
+section#artigo2 p.progra{
+	text-align: center;
+	font-family: 'PermanentMarker', cursive;
+	font-size: 15pt;
+	padding: 2px;
+	color: rgb(255, 255, 255);
+	margin-top: 100px; 
+}
+section#artigo2 img.icone1{
+	margin-left: 80px;
+}
+section#artigo2 a.btnArt1{
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+
+	border: 2px rgb(255, 255, 255) solid;
+	border-radius: 50px;
+	opacity: 0.9;
+
+    position: absolute;
+    top: 460px;
+    left: 110px;
+}
+
+section#artigo2 a.btnArt1:hover{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #000000;
+}
+
+
+/*============Segurança Digital==========*/
+section#artigo2 span.art2{
+	padding: 10px;
+	display: block;
+	width: 300px;
+	height: 500px;
+	border: 1px #000000 solid;
+	background-color: rgb(161,186,71);
+	position: absolute; 
+	top: 1350px;
+	left: 900px;
+	transition: box-shadow 0.8s;
+
+}
+section#artigo2 span.art2:hover{ 
+	background-color: rgba(161, 186, 71, 0.9);
+	box-shadow: 10px 10px 10px #606060;
+}
+section#artigo2 h1.hIN2{
+	text-align: center;
+	font-family: arial;
+	font-size: 20pt;
+	border-bottom: 1px #000000 solid;
+	margin-top: 190px; 
+
+}
+section#artigo2 p.seguran{
+	text-align: center;
+	font-family: 'PermanentMarker', cursive;
+	font-size: 15pt;
+	padding: 2px;
+	color: rgb(255, 255, 255);
+	margin-top: 30px;
+ 
+}
+section#artigo2 img.icone2{
+	position: absolute;
+	top: 10px;
+	margin-left: 80px;
+}
+section#artigo2 a.btnArt2{
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+
+	border: 2px rgb(255, 255, 255) solid;
+	border-radius: 50px;
+	opacity: 0.9;
+
+    position: absolute;
+    top: 460px;
+    left: 110px;
+}
+
+section#artigo2 a.btnArt2:hover{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #000000;
+}
+/*----------------fim--------------*/
+
+/*-------------ARTIGO FINAL ------------*/
+
+p.titulo{
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: arial;
+	font-size: 25pt;
+	color: #606060;
+	position: absolute;
+	top: 1900px;
+	left: 250px;
+
+}
+/*---------ARTIGO 1 CORPO FIM------*/
+div#corpoFim article.Fim1{
+	display: block;
+	padding: 5px;
+	height: 500px;
+	width: 300px;
+	margin-left: 50px;
+    position: absolute;
+    top: 2000px;
+    left: 120px;
+}
+article.Fim1 img#fimIMG1{
+	margin-top: 20px; 
+	height: 150px;
+	width: 300px;
+
+}
+ article.Fim1 p.titi{
+  text-align: center;
+  text-decoration: none;
+  font-size: 9pt;
+  margin-top: 0px;
+  margin-left: -105px;
+  color: red;
+
+}
+article.Fim1 p.sub{
+  text-align: left;
+  text-decoration: none;
+  font-size: 15pt;
+  margin-top: 5px;
+  color: #000000;
+
+}
+.texto{
+	font-family: 'PermanentMarker', cursive;
+	color: #606060;
+	font-size: 10pt; 
+}
+
+
+/*---------ARTIGO 2 CORPO FIM------*/
+div#corpoFim article.Fim2{
+	display: block;
+	padding: 5px;
+	height: 500px;
+	width: 300px;
+	margin-left: 50px;
+    position: absolute;
+    top: 2000px;
+    left: 430px;
+}
+article.Fim2 img#fimIMG2{
+	margin-top: 20px; 
+	height: 150px;
+	width: 300px;
+
+}
+ article.Fim2 p.titi{
+  text-align: center;
+  text-decoration: none;
+  font-size: 9pt;
+  margin-top: 0px;
+  margin-left: -105px;
+  color: red;
+
+}
+article.Fim2 p.sub{
+  text-align: left;
+  text-decoration: none;
+  font-size: 15pt;
+  margin-top: 5px;
+  color: #000000;
+
+}
+.texto{
+	font-family: 'PermanentMarker', cursive;
+	color: #606060;
+	font-size: 10pt; 
+}
+/*---------ARTIGO 3 CORPO FIM------*/
+div#corpoFim article.Fim3{
+	display: block;
+	padding: 5px;
+	height: 500px;
+	width: 300px;
+	margin-left: 50px;
+    position: absolute;
+    top: 2000px;
+    left: 740px;
+}
+article.Fim3 img#fimIMG3{
+	margin-top: 20px; 
+	height: 150px;
+	width: 300px;
+
+}
+ article.Fim3 p.titi{
+  text-align: center;
+  text-decoration: none;
+  font-size: 9pt;
+  margin-top: 0px;
+  margin-left: -105px;
+  color: red;
+
+}
+article.Fim3 p.sub{
+  text-align: left;
+  text-decoration: none;
+  font-size: 15pt;
+  margin-top: 5px;
+  color: #000000;
+
+}
+.texto{
+	font-family: 'PermanentMarker', cursive;
+	color: #606060;
+	font-size: 10pt; 
+}
+.btncorpoFim{
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: red;
+	border:1px #000000 solid;
+	border-radius: 50px;
+	border-color: red;
+	padding: 5px;
+	position: absolute;
+	top: 2550px;
+	left: 530px;
+}
+.btncorpoFim:hover{
+	background-color: red;
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+
+/*MAPA*/
+div#unidade iframe#mapa{
+position: absolute;
+top: 2760px;
+left: 650px;
+}
+div#unidade h1.uni{
+text-align: left;
+font-size: 25px;
+font-family: 'PermanentMarker', cursive;
+color: #000000;	
+border-bottom: 1px #30a0e3 solid;
+width: 600px;
+position: absolute;
+top:2670px;
+left: 20px;
+}
+
+div#unidade p.ptel{
+display: block;	
+text-align: left;
+padding: 10px;
+font-size: 15px;
+font-family: 'PermanentMarker', cursive;
+color: #000000;	
+position: absolute;
+top:2710px;
+left: 20px;
+}
+
+
+
+
+
+
+

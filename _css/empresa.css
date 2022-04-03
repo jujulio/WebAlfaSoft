@@ -1,0 +1,81 @@
+
+@charset="UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+body{
+	background-color: #ffffff;
+}
+
+/*------IMAGEM PAGINA-----------*/
+img.solucoes{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1260px;
+	height: 500px;
+
+}
+/*------------UM POUCO DA NOSSA HISTORIA----------*/
+p.inicio{
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-family: arial;
+   font-size: 40pt;
+   color: #000000;
+   position: absolute;
+   top: 600px;
+   left: 220px;
+}
+/*---------IMG CIO E NOME SPAN*/
+span.chefe{
+	display: block;
+	width: 160px;
+	height: 350px;
+	position: absolute;
+	top: 800px;
+	left: 20px;
+}
+
+span.chefe img{
+	padding: 1px;
+	width: 160px;
+	height: 250px;
+	border: 1px blue solid;
+	transition: box-shadow: 0.8s;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+span.chefe img:hover{
+ box-shadow: 5px 5px 5px #606060;
+}
+span.chefe p{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 10pt;
+	position: absolute;
+	top: 255px;
+	left: 0px;
+}
+span.chefe p.cargo{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 8pt;
+	color: red;
+	position: absolute;
+	top: 275px;
+	left: 0px;
+}
+p.texto{
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 12pt;
+	font-family: 'PermanentMaker', cursive;
+	color: #606060;
+	position: absolute;
+	top: 800px;
+	left: 250px;
+}
